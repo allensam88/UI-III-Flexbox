@@ -27,6 +27,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: flex;
+  justify-content: center;
 }
 body {
 	line-height: 1;
@@ -101,36 +102,26 @@ header .logo {
   margin-top: 25px;
 }
 
-/* cta */
+/* subheading */
+.subheading h1 {
+  font-size: 40px;
+}
 
-.cta .cta-text {
+.subheading {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  vertical-align: top;
-  font-size: 77px;
-  margin-top: 120px;
-  text-align: center;
+  flex-direction: column;
+  justify-content: flex-start;
   padding: 0px 75px;
 }
 
-.cta .cta-text button {
-  background: white;
-  vertical-align: top;
-  margin-top: 6px;
-  padding: 8px 44px;
-  font-size: 17px;
-  border: 1px solid black;
-  cursor: pointer;
-}
-
-.cta .cta-text button:hover {
+.subheading .subheading-text button:hover {
   background: black;
   color: white;
 }
 
-.cta img {
-  margin-top: 69px;
+.subheading img {
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .main-content {
@@ -143,6 +134,8 @@ header .logo {
 
 .main-content .top-content {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
   padding: 0 10px;
 }
 
@@ -161,12 +154,16 @@ header .logo {
 
 .main-content .bottom-content {
   display: flex;
+  align-content: flex-start;
   margin-top: 37px;
   padding: 0 10px;
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 40%;
   margin-right: 12px;
 }
 
